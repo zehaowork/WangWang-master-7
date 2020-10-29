@@ -252,7 +252,7 @@ function Detail({ navigation, route }) {
         params,
         function (res) {
           console.log(res.data.data);
-          goToApp(res.data.data.goodsBuyLink.mobile_short_url);
+          goToApp(res.data.data.goodsBuyLink.schema_url);
         },
         function (res) {
           navigation.navigate("Login");
